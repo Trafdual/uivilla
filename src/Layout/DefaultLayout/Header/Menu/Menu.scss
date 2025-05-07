@@ -1,0 +1,168 @@
+.elementor-section {
+    position: relative;
+}
+
+.elementor-menu-container {
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.elementor-menu-row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.elementor-menu-item_icon {
+    width: 18.417%;
+    display: flex;
+    position: relative;
+}
+
+.elementor-menu-menubar {
+    width: 81.583%;
+    display: flex;
+    position: relative;
+    min-height: 1px;
+}
+
+.elementor-column-wrap,
+.elementor-column-populated {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.elementor-widget-wrap {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: end;
+}
+
+.elementor__container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.elementor-widget-container img.menu-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.elementor-menu-icon {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #494c4f;
+    padding: 10px;
+}
+
+.menu_laptop_bar {
+    display: flex;
+    font-size: 0;
+}
+
+.menu_ul_laptop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu_ul_laptop li {
+    font-size: 16px;
+    position: relative;
+}
+
+.menu_a_laptop {
+    color: #333;
+    padding: 14px 17px;
+    font-family: "Noto Serif", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.menu_a_active {
+    color: #A37625 !important;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1024px) {
+    .elementor-menu-container {
+        max-width: 100%;
+    }
+
+    .elementor-menu-item_icon {
+        width: 50% !important;
+    }
+
+    .elementor-menu-menubar {
+        width: 50% !important;
+        justify-content: flex-end;
+    }
+
+    .elementor-menu-icon {
+        display: block;
+    }
+
+    .menu_laptop_bar {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu_laptop_bar.menu_mobile_open {
+        display: flex;
+    }
+
+    .menu_ul_laptop {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu_ul_laptop li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu_a_laptop {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu_a_laptop {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .elementor-widget-container img.menu-logo {
+        max-height: 50px;
+    }
+}

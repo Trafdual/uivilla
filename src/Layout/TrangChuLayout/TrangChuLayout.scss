@@ -1,0 +1,134 @@
+.section-banner-tong {
+    position: relative;
+    width: 100%;
+}
+
+.elementor-menu-container1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.elementor_banner {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.n2_section {
+    clear: both;
+    position: relative;
+    width: 100%;
+}
+
+.n2_section_ss {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1215px;
+    position: relative;
+    z-index: 0;
+}
+
+.n2-ss-slider-1 {
+    touch-action: pan-y;
+    position: relative;
+    background-attachment: scroll !important;
+}
+
+.n2-ss-slider-2 {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border: 0 solid rgba(62, 62, 62, 1);
+    border-radius: 0;
+    background-clip: padding-box;
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    z-index: 1;
+    height: 770px;
+}
+
+.n2-ss-slide-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.n2-ss-slide-backgrounds>* {
+    overflow: hidden;
+}
+
+.n2-ss-slide-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    z-index: 10;
+    box-sizing: content-box;
+}
+
+.n2-ss-slide-background * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.n2-ss-slide-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/banner.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+    z-index: 5;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media screen and (max-width: 1200px) {
+    .n2_section_ss {
+
+        width: 1215px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 0;
+    }
+
+    .n2-ss-slider-2 {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .n2-ss-slider-2 {
+        height: 450px;
+    }
+
+    .n2_section_ss {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 0;
+    }
+    .elementor-widget-wrap1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .n2-ss-slider-2 {
+        height: 300px;
+    }
+}
