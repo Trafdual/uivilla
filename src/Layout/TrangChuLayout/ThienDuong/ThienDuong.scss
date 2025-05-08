@@ -1,7 +1,103 @@
 .div_thienduong {
     background-color: #fff;
-    padding: 20px;
+    padding: 200px 0px 200px 0px;
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    background-image: url(http://socavilla.vn/wp-content/uploads/2022/06/DJI_0023.jpg);
+    background-position: 0px -306px;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.div_thienduong_overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.5;
+    background-color: #000000;
+    transition: background 0.3s,
+        border-radius 0.3s,
+        opacity 0.3s;
+}
+
+.div_thienduong_tong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    z-index: 1;
+
+    p {
+        color: #fffefe;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        font-family: "Roboto",
+            Sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: '';
+            width: 60px;
+            border: 2px solid #C49244;
+            border-radius: 50px;
+        }
+
+    }
+
+    h2 {
+        color: #FFFFFF;
+        font-family: "Noto Serif",
+            Sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.btn_thienduong {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .div_thienduong_tong {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .div_thienduong {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .div_thienduong_tong {
+        h2 {
+            font-size: 28px;
+        }
+    }
+
 }

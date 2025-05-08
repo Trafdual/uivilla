@@ -1,0 +1,128 @@
+.div_thuvien {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.div_thuvien * {
+    box-sizing: border-box;
+}
+
+.div_thuvien_tong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    z-index: 1;
+
+    p {
+        color: #1C1C1C;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: "Roboto",
+            Sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: '';
+            width: 60px;
+            border: 2px solid #C49244;
+            border-radius: 50px;
+        }
+
+    }
+
+    h2 {
+        color: #1C1C1C;
+        font-family: "Noto Serif",
+            Sans-serif;
+        font-size: 42px;
+        font-weight: 500;
+
+    }
+}
+
+.list_anh_thuvien {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.anh_thuvien_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 32%;
+    margin-top: 2%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease-in-out;
+    will-change: transform,
+        opacity;
+
+
+    &.show {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .div_thuvien_tong {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .anh_thuvien_item {
+        width: 48%;
+    }
+
+    .list_anh_thuvien {
+        gap: 4%
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .div_thuvien {
+        padding: 10px;
+    }
+
+    .div_thuvien_tong {
+        width: 100%;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+
+
+    .anh_thuvien_item {
+        width: 100%;
+    }
+
+    .list_anh_thuvien {
+        gap: 1%
+    }
+
+}

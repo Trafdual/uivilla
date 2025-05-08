@@ -10,9 +10,10 @@ import {
 import { FormDatPhong } from './FormDatPhong'
 import { GioiThieu } from './GioiThieu'
 import { ListPhong } from './ListPhong'
+import { ThienDuong } from './ThienDuong'
+import { ThuVien } from './ThuVien'
 
 const images = ['/banner.jpg', '/banner2.jpg', '/banner3.jpg']
-
 
 function TrangChuLayout () {
   const settings = {
@@ -69,6 +70,8 @@ function TrangChuLayout () {
       </div>
       <GioiThieu />
       <ListPhong />
+      <ThienDuong />
+      <ThuVien />
     </>
   )
 }

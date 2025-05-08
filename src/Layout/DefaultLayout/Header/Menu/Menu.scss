@@ -98,6 +98,10 @@
     justify-content: center;
     text-decoration: none;
     transition: all 0.2s linear;
+
+    &:hover {
+        color: #A37625 !important;
+    }
 }
 
 .menu_a_active {
