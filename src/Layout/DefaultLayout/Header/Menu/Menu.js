@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Menu.scss'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 
 function Menu () {
@@ -16,7 +16,7 @@ function Menu () {
     { name: 'Danh sách phòng', link: '/dsp' },
     { name: 'Menu đồ ăn', link: '/menu' },
     { name: 'Tiện ích', link: '/ti' },
-    { name: 'Liên hệ', link: '/lh' }
+    { name: 'Liên hệ', link: '/lienhe' }
   ]
 
   return (
@@ -57,8 +57,8 @@ function Menu () {
                       <ul className='menu_ul_laptop'>
                         {menus.map((menu, index) => (
                           <li key={index}>
-                            <a
-                              href={menu.link}
+                            <Link
+                              to={menu.link}
                               className={`menu_a_laptop${
                                 location.pathname === menu.link
                                   ? ' menu_a_active'
@@ -67,7 +67,7 @@ function Menu () {
                               onClick={() => setShowMobileMenu(false)}
                             >
                               {menu.name}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
