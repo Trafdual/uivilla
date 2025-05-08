@@ -1,6 +1,10 @@
 .header__container {
     z-index: 99;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+
 }
 
 .header__content {

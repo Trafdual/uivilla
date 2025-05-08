@@ -1,11 +1,137 @@
-.formdatphong{
+.formdatphong {
     position: absolute;
-    bottom: 30px;
+    bottom: -16%;
     left: 50%;
     right: 50%;
     z-index: 3;
     transform: translateX(-50%);
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-.formdatphong_inner{
-    
+
+.formdatphong_inner_tong {
+    width: 100%;
+}
+
+.formdatphong_inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px;
+}
+
+.div_formdp_input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+
+    label {
+        font-weight: 600;
+        color: black;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #e0e0e0;
+        height: 44px;
+    }
+}
+
+.btn_datphong {
+    font-size: 16px;
+    border: none;
+    background-color: #C49244 !important;
+    color: white;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    height: 44px;
+}
+
+.btn_checkngay {
+    font-size: 16px;
+    border: none;
+    background-color: #305e46 !important;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    height: 44px;
+    font-weight: 600;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .formdatphong_inner {
+        &::after {
+            position: absolute;
+            content: "";
+            top: -17px;
+            right: -17px;
+            border-right: transparent;
+            border-top: transparent;
+            border-bottom: #eaeaea;
+            border-style: solid;
+            border-width: 17px;
+            border-left: transparent;
+            border-bottom-width: 45px;
+            box-shadow: 0 -1px 0 -1px #cfcfcf;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: -17px;
+            left: -17px;
+            border-left: transparent;
+            border-top: transparent;
+            border-bottom: #eaeaea;
+            border-style: solid;
+            border-width: 17px;
+            border-right: transparent;
+            border-bottom-width: 45px;
+            box-shadow: 0 -1px 0 -1px #cfcfcf;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .formdatphong {
+        position: relative !important;
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .formdatphong_inner {
+        flex-direction: column;
+        align-items: center !important;
+        width: 100%;
+        box-shadow: unset !important;
+    }
+
+    .div_formdp_input {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .btn_checkngay {
+        width: 40%;
+        height: unset !important;
+        padding: 10px 20px 10px 20px;
+    }
+
 }

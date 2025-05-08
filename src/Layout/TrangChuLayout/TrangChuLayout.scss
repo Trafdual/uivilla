@@ -114,6 +114,12 @@
 .slick-next{
     right: 3% !important;
 }
+
+.trang-chu-layout{
+    margin-top: 7%;
+    position: relative;
+    margin-bottom: 8%;
+}
 /* ========== RESPONSIVE ========== */
 
 @media screen and (max-width: 1200px) {
@@ -127,6 +133,14 @@
     .n2-ss-slider-2 {
         height: 600px;
     }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .n2-ss-slider-2 {
+       margin-bottom: 10%;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -151,6 +165,10 @@
 
     .elementor-widget-wrap1 {
         width: 100%;
+    }
+    .trang-chu-layout {
+        margin-top: 20%;
+        margin-bottom: unset !important;
     }
 }
 
