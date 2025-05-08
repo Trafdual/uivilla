@@ -1,0 +1,71 @@
+.div_danhgia {
+    background-color: #fff;
+    padding: 200px 0px 200px 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    background-image: url(https://socavilla.vn/wp-content/uploads/2022/06/KTT08855.jpg);
+    background-position: 0px -306px;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.div_danhgia_tong {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    z-index: 1;
+
+    h2 {
+        color: #FFFFFF;
+        font-family: "Noto Serif",
+            Sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+    }
+}
+
+.div_danhgia_slider {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_danhgia_slider_item {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    p {
+        color: #FFFFFF;
+        font-size: 1.3em;
+        font-style: italic;
+        line-height: 1.5;
+    }
+}
+
+.div_danhgia_slider_item_avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+
+    h3 {
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+}
