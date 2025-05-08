@@ -7,8 +7,12 @@ import {
   faChevronLeft,
   faChevronRight
 } from '@fortawesome/free-solid-svg-icons'
+import { FormDatPhong } from './FormDatPhong'
+import { GioiThieu } from './GioiThieu'
+import { ListPhong } from './ListPhong'
 
 const images = ['/banner.jpg', '/banner2.jpg', '/banner3.jpg']
+
 
 function TrangChuLayout () {
   const settings = {
@@ -26,38 +30,46 @@ function TrangChuLayout () {
   }
 
   return (
-    <div>
-      <section className='section-banner-tong'>
-        <div className='elementor-menu-container1'>
-          <div className='elementor_banner1'>
-            <div className='elementor-widget-wrap1'>
-              <div className='elementor-widget-container'>
-                <div className='n2_section'>
-                  <div className='n2_section_ss'>
-                    <div className='n2-ss-slider-1'>
-                      <Slider {...settings} className='n2-ss-slider-2'>
-                        {images.map((src, index) => (
-                          <div key={index} className='n2-ss-slide-backgrounds'>
-                            <div className='n2-ss-slide-background'>
-                              <div>
-                                <div
-                                  className='n2-ss-slide-image'
-                                  style={{ backgroundImage: `url(${src})` }}
-                                ></div>
+    <>
+      <div className='trang-chu-layout'>
+        <section className='section-banner-tong'>
+          <div className='elementor-menu-container1'>
+            <div className='elementor_banner1'>
+              <div className='elementor-widget-wrap1'>
+                <div className='elementor-widget-container'>
+                  <div className='n2_section'>
+                    <div className='n2_section_ss'>
+                      <div className='n2-ss-slider-1'>
+                        <Slider {...settings} className='n2-ss-slider-2'>
+                          {images.map((src, index) => (
+                            <div
+                              key={index}
+                              className='n2-ss-slide-backgrounds'
+                            >
+                              <div className='n2-ss-slide-background'>
+                                <div>
+                                  <div
+                                    className='n2-ss-slide-image'
+                                    style={{ backgroundImage: `url(${src})` }}
+                                  ></div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
-                      </Slider>
+                          ))}
+                        </Slider>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+        <FormDatPhong />
+      </div>
+      <GioiThieu />
+      <ListPhong />
+    </>
   )
 }
 
