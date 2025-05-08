@@ -32,7 +32,9 @@
     "react-tippy": "^1.4.0",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.8",
-    "react-responsive": "^10.0.0"
+    "react-responsive": "^10.0.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

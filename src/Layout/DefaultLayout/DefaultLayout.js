@@ -14,7 +14,7 @@ function DefaultLayout ({ children }) {
     <div>
       <Header />
       <div
-        style={{ width: `${isMobile ? '100%' : '1200px'}`, margin: '0 auto' }}
+        style={{ width: `${isMobile ? '100%' : '100%'}`, margin: '0 auto' }}
       >
         {children}
       </div>
