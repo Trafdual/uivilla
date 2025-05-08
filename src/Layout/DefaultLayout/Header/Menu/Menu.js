@@ -16,6 +16,7 @@ function Menu () {
     { name: 'Danh sách phòng', link: '/dsp' },
     { name: 'Menu đồ ăn', link: '/menu' },
     { name: 'Tiện ích', link: '/ti' },
+    { name: 'Tin tức', link: '/tintuc' },
     { name: 'Liên hệ', link: '/lienhe' }
   ]
 
