@@ -18,8 +18,8 @@ function DanhGia () {
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
-    prevArrow: <FontAwesomeIcon icon={faChevronLeft} />,
-    nextArrow: <FontAwesomeIcon icon={faChevronRight} />,
+    prevArrow: <FontAwesomeIcon icon={faChevronLeft} className='prev'/>,
+    nextArrow: <FontAwesomeIcon icon={faChevronRight} className='next'/>,
     responsive: [
       {
         breakpoint: 1024,

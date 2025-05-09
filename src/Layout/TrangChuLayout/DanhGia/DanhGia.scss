@@ -9,6 +9,12 @@
     background-size: 100% auto;
     background-attachment: fixed;
     position: relative;
+    .slick-next{
+        right: -10% !important;
+    }
+    .slick-prev{
+        left: -10% !important;
+    }
 
 }
 
@@ -68,4 +74,33 @@
         color: #FFFFFF;
         font-weight: 700;
     }
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .div_danhgia_tong {
+        h2 {
+            font-size: 30px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .div_danhgia {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .div_danhgia_tong {
+        h2 {
+            font-size: 28px;
+        }
+        .slick-prev,
+        .slick-next {
+           display: none !important;
+        }
+    }
+
 }
