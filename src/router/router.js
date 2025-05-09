@@ -1,6 +1,7 @@
 import ContactPage from "../Layout/DefaultLayout/ContactPage/Contactpage";
 import TinTucPage from "../Layout/DefaultLayout/TinTucPage/TinTucPage";
 import { TrangChuLayout } from "../Layout/TrangChuLayout";
+import { LoginLayout } from "../Layout/Admin/LoginLayout";
 
 const publicRoutes = [
   { path: "/", component: TrangChuLayout },
