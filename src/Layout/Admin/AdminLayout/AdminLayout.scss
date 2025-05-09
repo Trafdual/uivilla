@@ -1,0 +1,38 @@
+.admin-layout {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.admin-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.3s ease;
+}
+
+
+.admin-content {
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.admin-content h2 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.admin-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-4px);
+}
