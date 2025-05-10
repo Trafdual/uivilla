@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import './LoginLayout.scss'
 import { Notify } from '../../../components/Notify'
+import { getApiUrl } from '../../../api'
 
 export default function LoginLayout () {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+
   const [error, setError] = useState('')
 
   const handleSubmit = async e => {
     try {
       e.preventDefault()
-      const response = await fetch('http://localhost:8080/login', {
+      const response = await fetch(`${getApiUrl('backend')}/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -21,6 +23,7 @@ export default function LoginLayout () {
       if (data.error) {
         setError(data.error)
       } else {
+        sessionStorage.setItem('dangnhap', true)
         window.location.href = '/admin'
       }
     } catch (error) {

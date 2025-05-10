@@ -11,7 +11,7 @@ export default function Notify ({ message, type = 'error', duration = 3000,setco
     }, duration)
     return () => clearTimeout(timer)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [duration])
+  }, [duration, message])
 
   if (!visible || !message) return null
 

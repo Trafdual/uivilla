@@ -1,5 +1,6 @@
 import './ThuVien.scss'
 import { useEffect, useRef } from 'react'
+import { Image } from 'antd'
 
 function ThuVien () {
   const data = [
@@ -63,8 +64,12 @@ function ThuVien () {
         <h2>Hãy đến để trải nghiệm</h2>
         <div className='list_anh_thuvien'>
           {data.map((item, index) => (
-            <div className='anh_thuvien_item' key={index}  ref={el => (itemsRef.current[index] = el)}>
-              <img src={item.img} alt='' />
+            <div
+              className='anh_thuvien_item'
+              key={index}
+              ref={el => (itemsRef.current[index] = el)}
+            >
+              <Image src={item.img} alt='' />
             </div>
           ))}
         </div>
