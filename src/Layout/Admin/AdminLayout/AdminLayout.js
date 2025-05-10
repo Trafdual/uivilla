@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SideBar } from './SideBar'
 import { Header } from './Header'
 import './AdminLayout.scss'
@@ -6,6 +6,20 @@ import './AdminLayout.scss'
 function AdminLayout () {
   const [activeMenu, setActiveMenu] = useState('dashboard')
   const [sidebarOpen, setSidebarOpen] = useState(true)
+
+  const [isLoggedIn, setIsLoggedIn] = useState(null)
+
+  useEffect(() => {
+    const loggedIn = !!sessionStorage.getItem('dangnhap')
+    setIsLoggedIn(loggedIn)
+    if (!loggedIn) {
+      window.location.href = '/login'
+    }
+  }, [])
+
+  if (!isLoggedIn) {
+    return null
+  }
 
   return (
     <div className='admin-layout'>
