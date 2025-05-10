@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { SideBar } from './SideBar'
 import { Header } from './Header'
 import './AdminLayout.scss'
-
+import { SanPhamLayout } from '../SanPhamLayout'
 function AdminLayout () {
-  const [activeMenu, setActiveMenu] = useState('dashboard')
+  const [activeMenu, setActiveMenu] = useState('product')
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
   const [isLoggedIn, setIsLoggedIn] = useState(null)
@@ -32,13 +32,7 @@ function AdminLayout () {
       <div className={`admin-main ${sidebarOpen ? '' : 'expand'}`}>
         <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
         <main className='admin-content'>
-          <h2>{activeMenu.toUpperCase()}</h2>
-          <div className='admin-card'>
-            <h3>Chào mừng đến VillaBook Admin</h3>
-            <p>
-              Bạn đang ở mục <strong>{activeMenu}</strong>.
-            </p>
-          </div>
+          {activeMenu === 'product' && <SanPhamLayout />}
         </main>
       </div>
     </div>

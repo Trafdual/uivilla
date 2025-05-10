@@ -1,0 +1,44 @@
+.sanpham-layout {
+    padding: 32px;
+    background-color: #f9f9fb;
+    min-height: 100vh;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        color: #1f1f1f;
+    }
+
+    .ant-table-wrapper {
+        background-color: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+        .ant-table-thead>tr>th {
+            background-color: #fafafa;
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .ant-table-tbody>tr>td {
+            font-size: 14px;
+            color: #555;
+            vertical-align: middle;
+        }
+
+        .ant-image {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        .ant-tag {
+            font-size: 13px;
+            border-radius: 4px;
+            padding: 4px 10px;
+        }
+    }
+}
