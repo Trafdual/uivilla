@@ -12,10 +12,10 @@ function Menu () {
 
   const menus = [
     { name: 'Trang chủ', link: '/' },
-    { name: 'Về chúng tôi', link: '/vect' },
-    { name: 'Danh sách phòng', link: '/dsp' },
+    { name: 'Về chúng tôi', link: '/vechungtoi' },
+    { name: 'Danh sách phòng', link: '/danhsachphong' },
     { name: 'Menu đồ ăn', link: '/menu' },
-    { name: 'Tiện ích', link: '/ti' },
+    { name: 'Tiện ích', link: '/tienich' },
     { name: 'Tin tức', link: '/tintuc' },
     { name: 'Liên hệ', link: '/lienhe' }
   ]
@@ -29,7 +29,7 @@ function Menu () {
               <div className='elementor-widget-container'>
                 <a href='#'>
                   <img
-                    src='https://socavilla.vn/wp-content/uploads/2020/11/SOCA-Logo-Copy.png'
+                    src='/logo.png'
                     alt='logo'
                     className='menu-logo'
                   />

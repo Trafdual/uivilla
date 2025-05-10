@@ -1,33 +1,33 @@
-import './ListPhongCPN.scss'
+// ListPhong.jsx
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./ListPhongCPN.scss";
 
-function ListPhong () {
-  const data = [
-    {
-      name: 'Villa nhà chính',
-      img: '/phong1.jpg',
-      link: '/phong1.jpg'
-    },
-    {
-      name: 'Bungalow nhà nón 2 tầng VIP',
-      img: '/phong2.jpg',
-      link: '/phong2.jpg'
-    },
-    {
-      name: 'Bungalow song lập 2 phòng ngủ',
-      img: '/phong3.jpg',
-      link: '/phong3.jpg'
-    }
-  ]
+function ListPhong() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/sanpham")
+      .then((res) => res.json())
+      .then(setData)
+      .catch(console.error);
+  }, []);
+
   return (
-    <div className='list_phong_tong'>
+    <div className="list_phong_tong">
       {data.map((item, index) => (
-        <div className='list_phong_item' key={index}>
-          <img src={item.img} alt='' />
+        <Link
+          to={`/chitietphong/${item.namekhongdau}`}
+          state={{ item }}
+          key={index}
+          className="list_phong_item"
+        >
+          <img src={`http://localhost:8080/${item.img}`} alt={item.name} />
           <h3>{item.name}</h3>
-        </div>
+        </Link>
       ))}
     </div>
-  )
+  );
 }
 
-export default ListPhong
+export default ListPhong;

@@ -53,26 +53,22 @@
 }
 
 .list_anh_thuvien {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 20px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2%;
+    margin: 0 auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
-
 .anh_thuvien_item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 32%;
-    margin-top: 2%;
     opacity: 0;
     transform: scale(0.95);
     transition: all 0.6s ease-in-out;
-    will-change: transform,
-        opacity;
-
+    will-change: transform, opacity;
 
     &.show {
         opacity: 1;
@@ -82,7 +78,8 @@
     img {
         width: 100%;
         height: auto;
-        display: block;
+        border-radius: 8px;
+        object-fit: cover;
     }
 }
 
