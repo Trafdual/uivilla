@@ -14,6 +14,7 @@ import { ThienDuong } from './ThienDuong'
 import { ThuVien } from './ThuVien'
 import { DanhGia } from './DanhGia'
 import ListTinTuc from './ListTinTuc/ListTinTuc'
+import ListTienIch from './ListTienIch/ListTienIch'
 
 const images = ['/banner.jpg', '/banner2.jpg', '/banner3.jpg']
 
@@ -72,6 +73,7 @@ function TrangChuLayout () {
       </div>
       <GioiThieu />
       <ListPhong />
+      <ListTienIch/>
       <ThienDuong />
       <ThuVien />
       <DanhGia />

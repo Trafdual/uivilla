@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Notify } from '../../../components/Notify'
-import { auth, RecaptchaVerifier } from '../../../components/FireBase/FireBase'
-import { signInWithPhoneNumber } from 'firebase/auth'
+import { auth } from '../../../components/FireBase/FireBase'
+import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth'
 
 export default function RegisterLayout () {
   const [username, setUsername] = useState('')
