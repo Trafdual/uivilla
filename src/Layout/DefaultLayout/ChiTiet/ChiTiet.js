@@ -1,5 +1,5 @@
 // ChiTietPhong.jsx
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import ReactStars from "react-rating-stars-component";
 import "./ChiTiet.scss";
@@ -175,7 +175,8 @@ const ChiTietPhong = () => {
           <h2>Xem thêm phòng</h2>
           <div className="room-list">
             {data.remainingroom.map((room, index) => (
-              <div
+              <a
+              href={`/chitietphong/${room.namekhongdau}`}
                 key={index}
                 className="room-item"
                 
@@ -185,7 +186,7 @@ const ChiTietPhong = () => {
                   alt={room.namesanpham}
                 />
                 <p>{room.namesanpham}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>
