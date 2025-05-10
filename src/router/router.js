@@ -9,6 +9,7 @@ import PagePhong from '../Layout/DefaultLayout/PagePhong/PagePhong'
 import MenuDoAn from '../Layout/DefaultLayout/MenuDoAn/MenuDoAn'
 import VeChungToi from '../Layout/DefaultLayout/VeChungToi/VeChungToi'
 import VillaMainBranch from '../Layout/DefaultLayout/ChiTiet/ChiTiet'
+import BlogDetail from '../Layout/DefaultLayout/ChiTietBlog/ChiTietBlog'
 
 const publicRoutes = [
   { path: '/', component: TrangChuLayout },
@@ -17,6 +18,7 @@ const publicRoutes = [
   { path: '/vechungtoi', component: VeChungToi },
   { path: '/danhsachphong', component: PagePhong },
   { path: '/chitietphong/:namekhongdau', component: VillaMainBranch },
+  { path: '/chitietblog/:tieude_khongdau', component: BlogDetail },
   { path: '/menu', component: MenuDoAn },
   { path: '/login', component: LoginLayout, layout: null },
   { path: '/admin', component: AdminLayout, layout: null },
