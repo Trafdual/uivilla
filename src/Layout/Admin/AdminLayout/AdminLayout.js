@@ -3,6 +3,7 @@ import { SideBar } from './SideBar'
 import { Header } from './Header'
 import './AdminLayout.scss'
 import { SanPhamLayout } from '../SanPhamLayout'
+import { BlogLayout } from '../BlogLayout'
 function AdminLayout () {
   const [activeMenu, setActiveMenu] = useState('product')
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -33,6 +34,7 @@ function AdminLayout () {
         <Header toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
         <main className='admin-content'>
           {activeMenu === 'product' && <SanPhamLayout />}
+          {activeMenu === 'blog' && <BlogLayout />}
         </main>
       </div>
     </div>
