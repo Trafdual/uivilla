@@ -40,11 +40,22 @@
         color: black;
     }
 
-    input {
+    input,
+    select {
         padding: 10px;
         font-size: 16px;
         border: 1px solid #e0e0e0;
         height: 44px;
+        color: #808285;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    select {
+        width: 150px;
+
     }
 }
 

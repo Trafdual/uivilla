@@ -16,7 +16,14 @@ function FormDatPhong () {
             </div>
             <div className='div_formdp_input'>
               <label htmlFor=''>Thực đơn</label>
-              <input type='text' placeholder='Thực đơn' required />
+              <select name='' id=''>
+                <option value='' disabled hidden selected className='optionone'>
+                  thực đơn
+                </option>
+                <option value='Đặt ăn sáng1'>Đặt ăn sáng</option>
+                <option value='Đặt ăn trưa'>Đặt ăn trưa</option>
+                <option value='Đặt ăn tối'>Đặt ăn tối</option>
+              </select>
             </div>
             <div className='div_formdp_input'>
               <label htmlFor=''>Số điện thoại</label>
@@ -28,9 +35,7 @@ function FormDatPhong () {
           </div>
         </form>
       </div>
-      <button className='btn_checkngay'>
-        Check ngày trống
-      </button>
+      <button className='btn_checkngay'>Check ngày trống</button>
     </section>
   )
 }

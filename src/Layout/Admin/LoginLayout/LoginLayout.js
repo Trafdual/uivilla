@@ -5,6 +5,7 @@ import { Notify } from '../../../components/Notify'
 export default function LoginLayout () {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+
   const [error, setError] = useState('')
 
   const handleSubmit = async e => {
@@ -21,6 +22,7 @@ export default function LoginLayout () {
       if (data.error) {
         setError(data.error)
       } else {
+        sessionStorage.setItem('dangnhap', true)
         window.location.href = '/admin'
       }
     } catch (error) {
