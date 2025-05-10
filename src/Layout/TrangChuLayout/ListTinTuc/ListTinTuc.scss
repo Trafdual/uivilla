@@ -1,6 +1,5 @@
 .news-page {
     font-family: Arial, sans-serif;
-    text-align: left;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -32,6 +31,9 @@
     
   }
   .news-list {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -54,5 +56,6 @@
     }
     .news-list {
         grid-template-columns: 1fr;
+        padding: 10px;
       }
   }
